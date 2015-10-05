@@ -1,0 +1,31 @@
+unit UCertPonto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCPHoraData = class(TForm)
+    edtHora: TEdit;
+    edtData: TEdit;
+    btnObter: TButton;
+    mnRequest: TMemo;
+    mnResponse: TMemo;
+    lblRequisicao: TLabel;
+    lblResposta: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCPHoraData: TfrmCPHoraData;
+
+implementation
+
+{$R *.dfm}
+
+end.

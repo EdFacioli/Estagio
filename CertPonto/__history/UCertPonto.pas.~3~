@@ -1,0 +1,51 @@
+unit UCertPonto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Soap.InvokeRegistry,
+  Soap.Rio, Soap.SOAPHTTPClient;
+
+type
+  TfrmCPHoraData = class(TForm)
+    edtHora: TEdit;
+    edtData: TEdit;
+    btnObter: TButton;
+    mnRequest: TMemo;
+    mnResponse: TMemo;
+    lblRequisicao: TLabel;
+    lblResposta: TLabel;
+    HR1: THTTPRIO;
+    procedure HR1AfterExecute(const MethodName: string; SOAPResponse: TStream);
+    procedure HR1BeforeExecute(const MethodName: string; SOAPRequest: TStream);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCPHoraData: TfrmCPHoraData;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCPHoraData.HR1AfterExecute(const MethodName: string;
+  SOAPResponse: TStream);
+begin
+  SOAPResponse.Position := 0;
+  mnResponse.Lines.LoadFromStream(SOAPResponse);
+  SOAPResponse.Position : = 0;
+end;
+
+procedure TfrmCPHoraData.HR1BeforeExecute(const MethodName: string;
+  SOAPRequest: TStream);
+begin
+  SOAPRequest.Position := 0;
+  mnRequest.Lines.LoadFromStream(SOAPRequest);
+  SOAPRequest.Position := 0;
+end;
+
+end.

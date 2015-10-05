@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2015/10/05 11:37:00.197,=D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/10/05 11:45:45.617,D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\CertPonto\UCertPonto.dfm=D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2015/10/05 11:45:45.617,D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\CertPonto\UCertPonto.pas=D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/10/05 11:45:50.434,D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\CertPonto\CertPonto.dproj=D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2015/10/05 11:46:26.044,=D:\USUARIOS\Edson\Documents\Embarcadero\Studio\Projects\CertPonto\svREPV.pas</Transaction>
+  </Transactions>
+</BorlandProject>
